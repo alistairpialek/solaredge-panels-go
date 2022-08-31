@@ -1,3 +1,3 @@
-module github.com/alistairpialek/solaredge-panels-go/v1
+module github.com/alistairpialek/solaredge-panels-go
 
 go 1.19
