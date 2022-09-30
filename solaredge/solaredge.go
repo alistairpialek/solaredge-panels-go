@@ -47,7 +47,11 @@ func NewClient(httpClient *http.Client, username string, password string) *Clien
 	if httpClient == nil {
 		httpClient = &http.Client{}
 	}
-	baseURL, _ := url.Parse(defaultBaseURL)
+
+	baseURL, err := url.Parse(defaultBaseURL)
+	if err != nil {
+		panic(err)
+	}
 
 	c := &Client{
 		client:        httpClient,
