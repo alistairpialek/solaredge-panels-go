@@ -9,6 +9,7 @@ import (
 	"net/http"
 	"net/url"
 	"reflect"
+	"runtime"
 	"strings"
 
 	"github.com/google/go-querystring/query"
@@ -16,7 +17,7 @@ import (
 
 const (
 	defaultBaseURL = "https://monitoring.solaredge.com/solaredge-apigw/api/"
-	userAgent      = "solaredge-panels-go"
+	version        = "0.0.1"
 )
 
 type Client struct {
@@ -27,11 +28,15 @@ type Client struct {
 	common service
 
 	client *http.Client
-	Sites  *SitesService
+	Site   *SiteService
 }
 
 type service struct {
 	client *Client
+}
+
+func UserAgent() string {
+	return "solaredge-panels-go/" + version + " (" + runtime.GOOS + "; " + runtime.GOARCH + ")"
 }
 
 // NewClient returns a new SolarEdge API client. If a nil httpClient is
@@ -44,9 +49,14 @@ func NewClient(httpClient *http.Client, username string, password string) *Clien
 	}
 	baseURL, _ := url.Parse(defaultBaseURL)
 
-	c := &Client{client: httpClient, BaseURL: baseURL, UserAgent: userAgent, Authorization: createAuthorizationString(username, password)}
+	c := &Client{
+		client:        httpClient,
+		BaseURL:       baseURL,
+		UserAgent:     UserAgent(),
+		Authorization: createAuthorizationString(username, password),
+	}
 	c.common.client = c
-	c.Sites = (*SitesService)(&c.common)
+	c.Site = (*SiteService)(&c.common)
 
 	return c
 }
