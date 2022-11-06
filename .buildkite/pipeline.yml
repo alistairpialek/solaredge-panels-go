@@ -1,0 +1,3 @@
+steps:
+  - label: ':buildkite: Test'
+    commands: true
