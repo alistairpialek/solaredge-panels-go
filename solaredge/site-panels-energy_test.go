@@ -3,7 +3,6 @@ package solaredge
 import (
 	"bytes"
 	"io"
-	"io/ioutil"
 	"net/http"
 	"os"
 	"regexp"
@@ -73,7 +72,7 @@ func TestSuccessfulUnmarshal(t *testing.T) {
 	}
 	defer jsonFile.Close()
 
-	byteValue, _ := ioutil.ReadAll(jsonFile)
+	byteValue, _ := io.ReadAll(jsonFile)
 
 	// Create a new reader with that JSON.
 	reader := io.NopCloser(bytes.NewReader(byteValue))
