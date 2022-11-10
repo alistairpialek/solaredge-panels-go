@@ -30,7 +30,7 @@ type PanelData struct {
 	Energy       float64
 }
 
-func (s *SiteService) PanelsEnergy(siteID string) (*[]PanelData, error) {
+func (s *SiteService) PanelsEnergy(siteID string) ([]PanelData, error) {
 	u := fmt.Sprintf("%s/sites/%s/layout/logical", defaultBaseURL, siteID)
 
 	req, err := s.client.NewRequest("GET", u, nil)
@@ -65,5 +65,5 @@ func (s *SiteService) PanelsEnergy(siteID string) (*[]PanelData, error) {
 		}
 	}
 
-	return &panels, err
+	return panels, nil
 }

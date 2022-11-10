@@ -1,0 +1,697 @@
+{
+    "siteId": 1234567,
+    "expanded": true,
+    "playback": true,
+    "hasPhysical": true,
+    "logicalTree": {
+        "data": null,
+        "numberOfChilds": 0,
+        "childIds": [
+            133197275
+        ],
+        "children": [
+            {
+                "data": {
+                    "id": 133197275,
+                    "serialNumber": "7301F2D7-3D",
+                    "name": "Inverter 1",
+                    "displayName": "1",
+                    "relativeOrder": 1,
+                    "type": "INVERTER",
+                    "operationsKey": 0
+                },
+                "numberOfChilds": 0,
+                "childIds": [
+                    133201300
+                ],
+                "children": [
+                    {
+                        "data": {
+                            "id": 133201300,
+                            "serialNumber": null,
+                            "name": "String 1.0",
+                            "displayName": "1.0",
+                            "relativeOrder": 0,
+                            "type": "STRING",
+                            "operationsKey": 0
+                        },
+                        "numberOfChilds": 0,
+                        "childIds": [
+                            133201648,
+                            133201649,
+                            133201650,
+                            133201651,
+                            133201652,
+                            133201653,
+                            133201302,
+                            133201654,
+                            133201911,
+                            133201914,
+                            133201860,
+                            133201861,
+                            133201862,
+                            133201863,
+                            133201643,
+                            133201644,
+                            133201646,
+                            133201647
+                        ],
+                        "children": [
+                            {
+                                "data": {
+                                    "id": 133201302,
+                                    "serialNumber": "126C7C5C-56",
+                                    "name": "Module 1.0.1",
+                                    "displayName": "1.0.1",
+                                    "relativeOrder": 1,
+                                    "type": "POWER_BOX",
+                                    "operationsKey": 0
+                                },
+                                "numberOfChilds": 0,
+                                "childIds": [],
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": 133201643,
+                                    "serialNumber": "126C7F78-75",
+                                    "name": "Module 1.0.2",
+                                    "displayName": "1.0.2",
+                                    "relativeOrder": 2,
+                                    "type": "POWER_BOX",
+                                    "operationsKey": 0
+                                },
+                                "numberOfChilds": 0,
+                                "childIds": [],
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": 133201644,
+                                    "serialNumber": "126E4CAA-76",
+                                    "name": "Module 1.0.3",
+                                    "displayName": "1.0.3",
+                                    "relativeOrder": 3,
+                                    "type": "POWER_BOX",
+                                    "operationsKey": 0
+                                },
+                                "numberOfChilds": 0,
+                                "childIds": [],
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": 133201646,
+                                    "serialNumber": "126E4C97-63",
+                                    "name": "Module 1.0.4",
+                                    "displayName": "1.0.4",
+                                    "relativeOrder": 4,
+                                    "type": "POWER_BOX",
+                                    "operationsKey": 0
+                                },
+                                "numberOfChilds": 0,
+                                "childIds": [],
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": 133201647,
+                                    "serialNumber": "126E4C90-5C",
+                                    "name": "Module 1.0.5",
+                                    "displayName": "1.0.5",
+                                    "relativeOrder": 5,
+                                    "type": "POWER_BOX",
+                                    "operationsKey": 0
+                                },
+                                "numberOfChilds": 0,
+                                "childIds": [],
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": 133201648,
+                                    "serialNumber": "126E510D-DE",
+                                    "name": "Module 1.0.6",
+                                    "displayName": "1.0.6",
+                                    "relativeOrder": 6,
+                                    "type": "POWER_BOX",
+                                    "operationsKey": 0
+                                },
+                                "numberOfChilds": 0,
+                                "childIds": [],
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": 133201649,
+                                    "serialNumber": "126E4C73-3F",
+                                    "name": "Module 1.0.7",
+                                    "displayName": "1.0.7",
+                                    "relativeOrder": 7,
+                                    "type": "POWER_BOX",
+                                    "operationsKey": 0
+                                },
+                                "numberOfChilds": 0,
+                                "childIds": [],
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": 133201650,
+                                    "serialNumber": "126E4C63-2F",
+                                    "name": "Module 1.0.8",
+                                    "displayName": "1.0.8",
+                                    "relativeOrder": 8,
+                                    "type": "POWER_BOX",
+                                    "operationsKey": 0
+                                },
+                                "numberOfChilds": 0,
+                                "childIds": [],
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": 133201651,
+                                    "serialNumber": "126B679E-82",
+                                    "name": "Module 1.0.9",
+                                    "displayName": "1.0.9",
+                                    "relativeOrder": 9,
+                                    "type": "POWER_BOX",
+                                    "operationsKey": 0
+                                },
+                                "numberOfChilds": 0,
+                                "childIds": [],
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": 133201652,
+                                    "serialNumber": "126E50D2-A2",
+                                    "name": "Module 1.0.10",
+                                    "displayName": "1.0.10",
+                                    "relativeOrder": 10,
+                                    "type": "POWER_BOX",
+                                    "operationsKey": 0
+                                },
+                                "numberOfChilds": 0,
+                                "childIds": [],
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": 133201653,
+                                    "serialNumber": "126C8343-44",
+                                    "name": "Module 1.0.11",
+                                    "displayName": "1.0.11",
+                                    "relativeOrder": 11,
+                                    "type": "POWER_BOX",
+                                    "operationsKey": 0
+                                },
+                                "numberOfChilds": 0,
+                                "childIds": [],
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": 133201654,
+                                    "serialNumber": "126E50DF-AF",
+                                    "name": "Module 1.0.12",
+                                    "displayName": "1.0.12",
+                                    "relativeOrder": 12,
+                                    "type": "POWER_BOX",
+                                    "operationsKey": 0
+                                },
+                                "numberOfChilds": 0,
+                                "childIds": [],
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": 133201860,
+                                    "serialNumber": "126E4C58-24",
+                                    "name": "Module 1.0.13",
+                                    "displayName": "1.0.13",
+                                    "relativeOrder": 13,
+                                    "type": "POWER_BOX",
+                                    "operationsKey": 0
+                                },
+                                "numberOfChilds": 0,
+                                "childIds": [],
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": 133201861,
+                                    "serialNumber": "126C92C7-D7",
+                                    "name": "Module 1.0.14",
+                                    "displayName": "1.0.14",
+                                    "relativeOrder": 14,
+                                    "type": "POWER_BOX",
+                                    "operationsKey": 0
+                                },
+                                "numberOfChilds": 0,
+                                "childIds": [],
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": 133201862,
+                                    "serialNumber": "126C9CC1-DB",
+                                    "name": "Module 1.0.15",
+                                    "displayName": "1.0.15",
+                                    "relativeOrder": 15,
+                                    "type": "POWER_BOX",
+                                    "operationsKey": 0
+                                },
+                                "numberOfChilds": 0,
+                                "childIds": [],
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": 133201863,
+                                    "serialNumber": "126E6506-EB",
+                                    "name": "Module 1.0.16",
+                                    "displayName": "1.0.16",
+                                    "relativeOrder": 16,
+                                    "type": "POWER_BOX",
+                                    "operationsKey": 0
+                                },
+                                "numberOfChilds": 0,
+                                "childIds": [],
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": 133201911,
+                                    "serialNumber": "126C8582-85",
+                                    "name": "Module 1.0.17",
+                                    "displayName": "1.0.17",
+                                    "relativeOrder": 17,
+                                    "type": "POWER_BOX",
+                                    "operationsKey": 0
+                                },
+                                "numberOfChilds": 0,
+                                "childIds": [],
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": 133201914,
+                                    "serialNumber": "126C5213-E3",
+                                    "name": "Module 1.0.18",
+                                    "displayName": "1.0.18",
+                                    "relativeOrder": 18,
+                                    "type": "POWER_BOX",
+                                    "operationsKey": 0
+                                },
+                                "numberOfChilds": 0,
+                                "childIds": [],
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "reportersData": {
+        "1776704": {
+            "energy": 27.48,
+            "moduleEnergy": null,
+            "unscaledEnergy": null,
+            "units": "kWh",
+            "color": "#A0ACF2",
+            "groupColor": null,
+            "relayState": null,
+            "cellularConnectionProperties": null
+        },
+        "133197275": {
+            "energy": 27.48,
+            "moduleEnergy": null,
+            "unscaledEnergy": 27476,
+            "units": "kWh",
+            "color": "#30F291",
+            "groupColor": "#3091F2",
+            "relayState": null,
+            "cellularConnectionProperties": {
+                "connectionType": "STANDARD",
+                "connectionFailure": null,
+                "connectable": true
+            }
+        },
+        "133201300": {
+            "energy": 27.92,
+            "moduleEnergy": null,
+            "unscaledEnergy": 27922,
+            "units": "kWh",
+            "color": "#3091F2",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": {
+                "connectionType": "STANDARD",
+                "connectionFailure": null,
+                "connectable": true
+            }
+        },
+        "133201302": {
+            "energy": 1.56,
+            "moduleEnergy": null,
+            "unscaledEnergy": 1562.5,
+            "units": "kWh",
+            "color": "#3091F2",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": null
+        },
+        "133201643": {
+            "energy": 1.54,
+            "moduleEnergy": null,
+            "unscaledEnergy": 1536.75,
+            "units": "kWh",
+            "color": "#2D89E5",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": null
+        },
+        "133201644": {
+            "energy": 1.52,
+            "moduleEnergy": null,
+            "unscaledEnergy": 1520.75,
+            "units": "kWh",
+            "color": "#2D89E5",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": null
+        },
+        "133201646": {
+            "energy": 1.56,
+            "moduleEnergy": null,
+            "unscaledEnergy": 1564.25,
+            "units": "kWh",
+            "color": "#3091F2",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": null
+        },
+        "133201647": {
+            "energy": 1.57,
+            "moduleEnergy": null,
+            "unscaledEnergy": 1574.25,
+            "units": "kWh",
+            "color": "#3091F2",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": null
+        },
+        "133201648": {
+            "energy": 1.52,
+            "moduleEnergy": null,
+            "unscaledEnergy": 1520.5,
+            "units": "kWh",
+            "color": "#2D89E5",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": null
+        },
+        "133201649": {
+            "energy": 1.55,
+            "moduleEnergy": null,
+            "unscaledEnergy": 1547.25,
+            "units": "kWh",
+            "color": "#3091F2",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": null
+        },
+        "133201650": {
+            "energy": 1.54,
+            "moduleEnergy": null,
+            "unscaledEnergy": 1537.75,
+            "units": "kWh",
+            "color": "#2D89E5",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": null
+        },
+        "133201651": {
+            "energy": 1.48,
+            "moduleEnergy": null,
+            "unscaledEnergy": 1478.25,
+            "units": "kWh",
+            "color": "#2D89E5",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": null
+        },
+        "133201652": {
+            "energy": 1.56,
+            "moduleEnergy": null,
+            "unscaledEnergy": 1561.5,
+            "units": "kWh",
+            "color": "#3091F2",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": null
+        },
+        "133201653": {
+            "energy": 1.41,
+            "moduleEnergy": null,
+            "unscaledEnergy": 1413.75,
+            "units": "kWh",
+            "color": "#2B82D8",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": null
+        },
+        "133201654": {
+            "energy": 1.59,
+            "moduleEnergy": null,
+            "unscaledEnergy": 1593.25,
+            "units": "kWh",
+            "color": "#3091F2",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": null
+        },
+        "133201860": {
+            "energy": 1.61,
+            "moduleEnergy": null,
+            "unscaledEnergy": 1608.75,
+            "units": "kWh",
+            "color": "#3091F2",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": null
+        },
+        "133201861": {
+            "energy": 1.56,
+            "moduleEnergy": null,
+            "unscaledEnergy": 1562,
+            "units": "kWh",
+            "color": "#3091F2",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": null
+        },
+        "133201862": {
+            "energy": 1.6,
+            "moduleEnergy": null,
+            "unscaledEnergy": 1598.75,
+            "units": "kWh",
+            "color": "#3091F2",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": null
+        },
+        "133201863": {
+            "energy": 1.59,
+            "moduleEnergy": null,
+            "unscaledEnergy": 1588.25,
+            "units": "kWh",
+            "color": "#3091F2",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": null
+        },
+        "133201911": {
+            "energy": 1.53,
+            "moduleEnergy": null,
+            "unscaledEnergy": 1530.5,
+            "units": "kWh",
+            "color": "#2D89E5",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": null
+        },
+        "133201914": {
+            "energy": 1.62,
+            "moduleEnergy": null,
+            "unscaledEnergy": 1623,
+            "units": "kWh",
+            "color": "#3091F2",
+            "groupColor": "#000000",
+            "relayState": null,
+            "cellularConnectionProperties": null
+        }
+    },
+    "reportersInfo": {},
+    "hierarchyColors": [
+        "'#19279c'",
+        "'#771528'",
+        "'#8390aa'",
+        "'#00C69D'",
+        "'#c90086'",
+        "'#755810'",
+        "'#8fb1ff'",
+        "'#00eae6'",
+        "'#aa9a62'",
+        "'#f24ef9'",
+        "'#00AEEF'",
+        "'#9A5044'",
+        "'#0BE200'",
+        "'#1A6F98'",
+        "'#7A96FF'",
+        "'#4AA044'",
+        "'#242275'",
+        "'#440000'",
+        "'#6633CC'",
+        "'#996103'",
+        "'#1A9B9A'",
+        "'#CA00CD'",
+        "'#7D828E'",
+        "'#004763'",
+        "'#4A75FF'",
+        "'#2F3731'",
+        "'#EC3775'",
+        "'#5C677C'",
+        "'#F49AC1'",
+        "'#B7B919'",
+        "'#893070'",
+        "'#445455'",
+        "'#999999'",
+        "'#99CC00'",
+        "'#CC66FF'",
+        "'#0066CC'",
+        "'#FFB379'",
+        "'#004400'",
+        "'#A50303'",
+        "'#B08874'",
+        "'#025E93'",
+        "'#CBB22B'",
+        "'#1A309A'",
+        "'#39B2C1'",
+        "'#DFE8A1'",
+        "'#851273'",
+        "'#587893'",
+        "'#94CA8E'",
+        "'#72EC7A'",
+        "'#746000'",
+        "'#687294'",
+        "'#9DCD21'",
+        "'#306974'",
+        "'#E0366F'",
+        "'#D1BDB3'",
+        "'#9EDEF4'",
+        "'#9356B6'",
+        "'#E5E83C'",
+        "'#4F58B4'",
+        "'#5AB9A2'",
+        "'#55F193'",
+        "'#B4F99B'",
+        "'#F50F26'",
+        "'#C747AD'",
+        "'#E0CACD'",
+        "'#44768E'",
+        "'#F6224D'",
+        "'#884602'",
+        "'#3143D0'",
+        "'#77657F'",
+        "'#DEAA53'",
+        "'#3C1688'",
+        "'#ED96F8'",
+        "'#14A34D'",
+        "'#24858F'",
+        "'#08741D'",
+        "'#D8060C'",
+        "'#C6EAA9'",
+        "'#2F35CA'",
+        "'#12AC8E'",
+        "'#063CFA'",
+        "'#2934C9'",
+        "'#D19542'",
+        "'#9D96A3'",
+        "'#5A6DB3'",
+        "'#AFE5B7'",
+        "'#7D1C96'",
+        "'#07C0D9'",
+        "'#702E58'",
+        "'#FE986C'",
+        "'#CAC090'",
+        "'#C5E140'",
+        "'#136B1E'",
+        "'#2FE62B'",
+        "'#118FA2'",
+        "'#25BE41'",
+        "'#6C4B4C'",
+        "'#E0062B'",
+        "'#C06D7D'",
+        "'#DA5782'"
+    ],
+    "chartParams": null,
+    "operations": null,
+    "connectionProps": {
+        "133197275": {
+            "connectionType": "STANDARD",
+            "connectionFailure": null,
+            "connectable": true
+        },
+        "133201300": {
+            "connectionType": "STANDARD",
+            "connectionFailure": null,
+            "connectable": true
+        },
+        "133201302": null,
+        "133201643": null,
+        "133201644": null,
+        "133201646": null,
+        "133201647": null,
+        "133201648": null,
+        "133201649": null,
+        "133201650": null,
+        "133201651": null,
+        "133201652": null,
+        "133201653": null,
+        "133201654": null,
+        "133201860": null,
+        "133201861": null,
+        "133201862": null,
+        "133201863": null,
+        "133201911": null,
+        "133201914": null
+    },
+    "overrideChartParams": {
+        "133197275": null,
+        "133201300": null,
+        "133201302": null,
+        "133201643": null,
+        "133201644": null,
+        "133201646": null,
+        "133201647": null,
+        "133201648": null,
+        "133201649": null,
+        "133201650": null,
+        "133201651": null,
+        "133201652": null,
+        "133201653": null,
+        "133201654": null,
+        "133201860": null,
+        "133201861": null,
+        "133201862": null,
+        "133201863": null,
+        "133201911": null,
+        "133201914": null
+    },
+    "geminiOperations": {},
+    "reporterAlertSummaryList": []
+}

@@ -19,7 +19,7 @@ func main() {
 		panic(err)
 	}
 
-	for _, p := range *panels {
+	for _, p := range panels {
 		fmt.Printf("%s, %d, %s, %f\n", p.DisplayName, p.ID, p.SerialNumber, p.Energy)
 	}
 }
