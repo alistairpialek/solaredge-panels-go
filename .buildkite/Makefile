@@ -1,0 +1,26 @@
+go = \
+	docker run --rm \
+		-v ${PWD}:/go/src \
+		-w /go/src \
+		golang:1.19 $1
+
+.PHONY: test
+test: fmt vet
+	@echo "--- :go: Test"
+	@$(call go,go test -v -cover ./solaredge)
+
+.PHONY: fmt
+fmt:
+	@echo "--- :go: Fmt"
+	@$(call go,gofmt -d .)
+
+.PHONY: vet
+vet:
+	@echo "--- :go: Vet"
+	@$(call go,go vet ./...)
+
+# TODO
+.PHONY: staticcheck
+staticcheck:
+	@echo "--- :go: Staticcheck"
+	@$(call go,staticcheck ./...)

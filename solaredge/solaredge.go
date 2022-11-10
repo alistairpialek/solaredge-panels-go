@@ -6,7 +6,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"log"
 	"net/http"
 	"net/url"
 	"runtime"
@@ -110,7 +109,7 @@ func (c *Client) NewRequest(method, urlStr string, body interface{}) (*http.Requ
 
 func (c *Client) do(req *http.Request, v interface{}) (*http.Response, error) {
 	// Show the request.
-	log.Printf("request: %+v", req)
+	//log.Printf("request: %+v", req)
 
 	// Make the response.
 	resp, err := c.client.Do(req)
@@ -120,14 +119,14 @@ func (c *Client) do(req *http.Request, v interface{}) (*http.Response, error) {
 	defer resp.Body.Close()
 
 	// Show the response.
-	log.Printf("response: %+v", resp)
+	//log.Printf("response: %+v", resp)
 
 	// Read the response body now so that we can show it for debugging purposes.
 	bodyBytes, _ := io.ReadAll(resp.Body)
 	if err != nil {
 		return resp, err
 	}
-	log.Printf("response body: %s", string(bodyBytes))
+	//log.Printf("response body: %s", string(bodyBytes))
 
 	// Use unmarshal rather than decode since the reader now has already been read.
 	err = json.Unmarshal(bodyBytes, v)
@@ -146,5 +145,6 @@ func (c *Client) do(req *http.Request, v interface{}) (*http.Response, error) {
 func createAuthorizationString(username string, password string) string {
 	authString := fmt.Sprintf("%s:%s", username, password)
 	b64AuthString := base64.StdEncoding.EncodeToString([]byte(authString))
+
 	return fmt.Sprintf("Basic %s", b64AuthString)
 }
