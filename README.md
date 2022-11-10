@@ -1,5 +1,7 @@
 # Golang SolarEdge Panels API
 
+[![Build status](https://badge.buildkite.com/3eb3ca4998e2acad35a0d1d4a2d6fe00ba66d3b1a2a27db0e7.svg)](https://buildkite.com/alistairpialek/solaredge-panels-go?branch=main)
+
 Go client for the _unofficial_ SolarEdge gateway API. Strangely, the [SolarEdge monitoring API][1] does not expose solar
 panel data, which if you have Power Optimizers installed means you are not able to see via an API how much energy each of
 your solar panels are producing. This data _is_ available via the website which is largely how I discovered the gateway

@@ -8,17 +8,18 @@ import (
 	"io"
 	"net/http"
 	"net/url"
-	"reflect"
 	"runtime"
 	"strings"
-
-	"github.com/google/go-querystring/query"
 )
 
 const (
 	defaultBaseURL = "https://monitoring.solaredge.com/solaredge-apigw/api/"
 	version        = "0.0.1"
 )
+
+type HTTPClient interface {
+	Do(req *http.Request) (*http.Response, error)
+}
 
 type Client struct {
 	BaseURL       *url.URL
@@ -27,7 +28,7 @@ type Client struct {
 
 	common service
 
-	client *http.Client
+	client HTTPClient
 	Site   *SiteService
 }
 
@@ -43,19 +44,14 @@ func UserAgent() string {
 // provided, a new http.Client will be used. To use API methods which require
 // authentication, provide an http.Client that will perform the authentication
 // for you (such as that provided by the golang.org/x/oauth2 library).
-func NewClient(httpClient *http.Client, username string, password string) *Client {
+func NewClient(httpClient HTTPClient, username string, password string) *Client {
 	if httpClient == nil {
 		httpClient = &http.Client{}
 	}
 
-	baseURL, err := url.Parse(defaultBaseURL)
-	if err != nil {
-		panic(err)
-	}
-
 	c := &Client{
 		client:        httpClient,
-		BaseURL:       baseURL,
+		BaseURL:       SetBaseURL(),
 		UserAgent:     UserAgent(),
 		Authorization: createAuthorizationString(username, password),
 	}
@@ -63,6 +59,15 @@ func NewClient(httpClient *http.Client, username string, password string) *Clien
 	c.Site = (*SiteService)(&c.common)
 
 	return c
+}
+
+func SetBaseURL() *url.URL {
+	baseURL, err := url.Parse(defaultBaseURL)
+	if err != nil {
+		panic(err)
+	}
+
+	return baseURL
 }
 
 // NewRequest creates an API request. A relative URL can be provided in urlStr,
@@ -103,42 +108,43 @@ func (c *Client) NewRequest(method, urlStr string, body interface{}) (*http.Requ
 }
 
 func (c *Client) do(req *http.Request, v interface{}) (*http.Response, error) {
-	fmt.Println(req)
+	// Show the request.
+	//log.Printf("request: %+v", req)
+
+	// Make the response.
 	resp, err := c.client.Do(req)
 	if err != nil {
-		return nil, err
+		return resp, err
 	}
 	defer resp.Body.Close()
-	fmt.Println(resp.Body)
-	err = json.NewDecoder(resp.Body).Decode(v)
-	fmt.Println(resp)
-	return resp, err
-}
 
-// addOptions adds the parameters in opt as URL query parameters to s. opt
-// must be a struct whose fields may contain "url" tags.
-func addOptions(s string, opt interface{}) (string, error) {
-	v := reflect.ValueOf(opt)
-	if v.Kind() == reflect.Ptr && v.IsNil() {
-		return s, nil
-	}
+	// Show the response.
+	//log.Printf("response: %+v", resp)
 
-	u, err := url.Parse(s)
+	// Read the response body now so that we can show it for debugging purposes.
+	bodyBytes, _ := io.ReadAll(resp.Body)
 	if err != nil {
-		return s, err
+		return resp, err
 	}
+	//log.Printf("response body: %s", string(bodyBytes))
 
-	qs, err := query.Values(opt)
+	// Use unmarshal rather than decode since the reader now has already been read.
+	err = json.Unmarshal(bodyBytes, v)
 	if err != nil {
-		return s, err
+		return resp, err
 	}
 
-	u.RawQuery = qs.Encode()
-	return u.String(), nil
+	// Check the response status code is 2xx
+	if resp.StatusCode >= 299 {
+		return resp, fmt.Errorf("response status code: %d", resp.StatusCode)
+	}
+
+	return resp, nil
 }
 
 func createAuthorizationString(username string, password string) string {
 	authString := fmt.Sprintf("%s:%s", username, password)
 	b64AuthString := base64.StdEncoding.EncodeToString([]byte(authString))
+
 	return fmt.Sprintf("Basic %s", b64AuthString)
 }

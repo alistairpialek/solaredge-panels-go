@@ -1,0 +1,3 @@
+steps:
+  - label: ':golang: Test solaredge package'
+    commands: make test
