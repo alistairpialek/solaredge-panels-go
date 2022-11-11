@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0](https://github.com/alistairpialek/solaredge-panels-go/compare/v1.0.0...v1.1.0) (2022-11-11)
+
+
+### Features
+
+* **ci:** add staticcheck to test ([#6](https://github.com/alistairpialek/solaredge-panels-go/issues/6)) ([a39cc72](https://github.com/alistairpialek/solaredge-panels-go/commit/a39cc7232fb3277e979d7daaeb03df8a33fdb0dc))
+
 ## 1.0.0 (2022-11-10)
 
 
