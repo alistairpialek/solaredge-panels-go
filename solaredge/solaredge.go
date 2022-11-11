@@ -6,7 +6,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"net/http"
 	"net/url"
 	"runtime"
@@ -123,7 +122,7 @@ func (c *Client) do(req *http.Request, v interface{}) (*http.Response, error) {
 	//log.Printf("response: %+v", resp)
 
 	// Read the response body now so that we can show it for debugging purposes.
-	bodyBytes, _ := ioutil.ReadAll(resp.Body)
+	bodyBytes, _ := io.ReadAll(resp.Body)
 	if err != nil {
 		return resp, err
 	}
