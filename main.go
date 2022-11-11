@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+        	"fmt"
 	"os"
 
 	"github.com/alistairpialek/solaredge-panels-go/solaredge"
