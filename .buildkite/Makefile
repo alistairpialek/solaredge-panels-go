@@ -2,7 +2,7 @@ go = \
 	docker run --rm \
 		-v ${PWD}:/go/src \
 		-w /go/src \
-		golang:1.19 $1
+		${BUILDKITE_PLUGIN_DOCKER_IMAGE} $1
 
 .PHONY: test
 test: fmt vet
