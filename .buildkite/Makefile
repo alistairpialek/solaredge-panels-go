@@ -2,10 +2,10 @@ go = \
 	docker run --rm \
 		-v ${PWD}:/go/src \
 		-w /go/src \
-		golang:1.19 $1
+		${BUILDKITE_PLUGIN_DOCKER_IMAGE} $1
 
 .PHONY: test
-test: fmt vet
+test: fmt vet staticcheck
 	@echo "--- :go: Test"
 	@$(call go,go test -v -cover ./solaredge)
 
@@ -19,7 +19,6 @@ vet:
 	@echo "--- :go: Vet"
 	@$(call go,go vet ./...)
 
-# TODO
 .PHONY: staticcheck
 staticcheck:
 	@echo "--- :go: Staticcheck"
