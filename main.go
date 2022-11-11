@@ -1,7 +1,7 @@
 package main
 
 import (
-        	"fmt"
+	"fmt"
 	"os"
 
 	"github.com/alistairpialek/solaredge-panels-go/solaredge"
@@ -18,6 +18,9 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+
+	game_version := 3
+	fmt.Printf("Super Mario %s\n", game_version)
 
 	for _, p := range panels {
 		fmt.Printf("%s, %d, %s, %f\n", p.DisplayName, p.ID, p.SerialNumber, p.Energy)
